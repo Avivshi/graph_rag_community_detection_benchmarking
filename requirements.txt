@@ -1,0 +1,40 @@
+# Core scientific stack
+numpy>=1.26,<2.0
+pandas>=2.2,<3.0
+scipy>=1.11
+scikit-learn>=1.5
+networkx>=3.2
+matplotlib>=3.8
+
+# Graph & community detection
+ingen>=0.11
+python-louvain>=0.16
+leidenalg>=0.10
+pyvis>=0.3
+
+# Embeddings / NLP / LLM
+sentence-transformers>=3.0
+transformers>=4.40
+torch>=2.2
+langchain>=0.3
+langchain-community>=0.3
+openai>=1.0 ; extra == "llm"
+ollama>=0.1.0 ; extra == "llm"
+
+# Neo4j & data pipeline
+neo4j>=5.25
+python-dotenv>=1.0
+PyYAML>=6.0
+requests>=2.32
+tenacity>=8.2
+
+# Jupyter / dev (can be placed in a separate dev file if desired)
+ipykernel>=6.29
+jupyterlab>=4.2
+ipywidgets>=8.1
+
+# Type & config utilities
+pydantic>=2.7
+
+# Progress / misc
+tqdm>=4.66
