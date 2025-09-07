@@ -117,7 +117,7 @@ This downloads:
    ```
 
 2. **Open the main notebook**:
-   - [`graph_rag_community_detection_new_copy.ipynb`](graph_rag_community_detection_new_copy.ipynb)
+   - [`graph_rag_community_detection_benchmarking.ipynb`](graph_rag_community_detection_benchmarking.ipynb)
 
 3. **Execute cells sequentially** to:
    - Ingest datasets into Neo4j
@@ -185,7 +185,6 @@ leiden_communities = leiden_partition(nodes, edges)
 ## 📁 Project Structure
 
 ```
-├── adjacency_results.txt           # Adjacency matrix analysis results
 ├── docker-compose.yaml             # Neo4j container configuration
 ├── requirements.txt                # Python dependencies
 ├── .env                            # Environment variables
@@ -211,10 +210,7 @@ leiden_communities = leiden_partition(nodes, edges)
 │   ├── evaluation_metrics.py      # Metric calculation functions
 │   └── download_data.py           # Dataset download script
 │
-├── notebooks/                      # Jupyter notebooks
-│   ├── graph_rag_community_detection_new_copy.ipynb
-│   ├── graph_rag_community_detection.ipynb
-│   └── [other analysis notebooks]
+├── graph_rag_community_detection_benchmarking.ipynb # Jupyter notebook
 │
 └── data-*/                         # Neo4j database files (auto-generated)
     ├── data-alice/
@@ -324,11 +320,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
-
-## 📞 Contact
-
-**Aviv Shimoni**  
-*Holon Institute of Technology*  
-*Email*: [your-email@example.com]
-
-**Supervisor**: Dr. Uri Itai
